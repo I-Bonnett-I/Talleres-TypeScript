@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Series</title>
+    <script type="module" src='./scripts/main.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <br>
-    <nav class="navbar bg-primary" data-bs-theme="dark">
+    <nav class="navbar bg-primary" data-bs-theme="dark" >
         <div class="container-fluid">
-          <a class="navbar-brand">
-            <img src="/images/tv_series.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            TV Series
-          </a>
+          <div class="navbar-brand" style="color: white;">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/882/789/large_2x/tv-logo-design-vector.jpg" 
+              style="max-width: 40px;">
+            <strong>TV Series</strong>
+          </div>
         </div>
     </nav>
     </br>
     <div class="container">
         <div class="row justify-content-start">
             <div class="col-6">
-                <table class="table">
+                <table class="table" id="table">
                     <thead class="thead-dark">
                       <tr>
                         <th>#</th>
@@ -28,16 +30,15 @@
                         <th>Seasons</th>
                       </tr>
                     </thead>
-                    <tbody id="series"></tbody>
+                    
                   </table>
-                  <h6>Seasons average: <strong><mark><span id="averageSeasons"></span></mark></strong></h6>
+                  <h6>Seasons average: <strong><span id="promedio"></span></strong></h6>
             </div>
-            <div class="col-4" id="cards">
-            </div>
+            <div class="col">
+              <div id="tarjeta"></div>    
+          </div>  
         </div>
     </div>
-    <script type="module" src="./scripts/serie.js"></script>
-    <script type="module" src="./scripts/data.js"></script>
-    <script type="module" src="./scripts/main.js"></script>  
+    <script src="./scripts/main.js"></script>  
 </body>
 </html>
